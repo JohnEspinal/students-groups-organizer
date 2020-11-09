@@ -11,19 +11,6 @@ let topicsPath = path.join('content', process.argv[3]);
 var groupQty = process.argv[4];
 var result = [];
 
-/* [
-    {
-    topics: [],
-    students: []
-    },
-    {
-    topics: [],
-    students: []
-    },
-] */
-
-
-
 // Reading students file
 try {
     var studentsFile = fs.readFileSync(studentsPath, 'utf-8').split('\n');
@@ -36,7 +23,7 @@ try {
     })
 
 } catch (err) {
-    console.log(err);
+    console.log(err + "The file you entered does not exist or were not found.");
 }
 
 // Reading topics file
@@ -51,7 +38,7 @@ try {
     })
 
 } catch (err) {
-    console.log(err);
+    console.log(err + "The file you entered does not exist or were not found.");
 }
 
 // Shuffle arrays
@@ -82,6 +69,8 @@ var topicsRemainder = studentsArray.length%groupQty;
 
 
 if(studentsFile.length>=groupQty && topicsArray.length>=groupQty){
+
+
     //Organize groups by topics and students
 for (let index = 0; index < groupQty; index++) {
     let studentCurrentIndex = 0;
