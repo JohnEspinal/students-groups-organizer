@@ -1,0 +1,14 @@
+{
+  "name": "file-reader",
+  "version": "1.0.0",
+  "description": "Students groups organizer",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "John Espinal",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
