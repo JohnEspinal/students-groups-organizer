@@ -4,7 +4,8 @@
   "description": "Students groups organizer",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "organizer": "node index.js",
+    "dev": "nodemon index.js Students.txt Topics.txt 4"
   },
   "author": "John Espinal",
   "license": "ISC",
