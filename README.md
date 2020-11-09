@@ -11,7 +11,7 @@
 # How to run:
 
 1. Open a console terminal within the project folder.
-2. Run command **npm run organizer -students file name and extension- -topics file name and extension- -group quantity-**
+2. Run command **npm run organizer -students file name with extension- -topics file name with extension- -group quantity-**
 
 
 Note: 
